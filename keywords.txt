@@ -1,0 +1,38 @@
+#######################################
+# Syntax Coloring Map ITG3200_gyro
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ITG3200	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+init	KEYWORD2
+read	KEYWORD2
+write	KEYWORD2
+getTemperature	KEYWORD2
+getXYZ	KEYWORD2
+getAngularVelocity	KEYWORD2
+zeroCalibrate	KEYWORD2	
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ITG3200_WHO	LITERAL1
+ITG3200_SMPL	LITERAL1
+ITG3200_DLPF	LITERAL1
+ITG3200_INT_C	LITERAL1
+ITG3200_INT_S	LITERAL1
+ITG3200_TMP_H	LITERAL1
+ITG3200_TMP_L	LITERAL1
+ITG3200_GX_H	LITERAL1
+ITG3200_GX_L	LITERAL1
+ITG3200_GY_H	LITERAL1
+ITG3200_GY_L	LITERAL1
+ITG3200_GZ_H	LITERAL1
+ITG3200_GZ_L	LITERAL1
+ITG3200_PWR_M	LITERAL1
