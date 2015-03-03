@@ -41,7 +41,7 @@ void loop()
     Serial.print(gyro.getTemperature());
     Serial.println(" C");
 
-    int x,y,z;
+    int16_t x,y,z;
     gyro.getXYZ(&x,&y,&z);
     Serial.print("values of X , Y , Z: ");
     Serial.print(x);
