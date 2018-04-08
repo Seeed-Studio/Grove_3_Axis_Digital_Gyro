@@ -1,6 +1,8 @@
 Grove - 3-Axis Digital Gyro 
 ---------------------------------------------------------
-[![Grove - 3-Axis Digital Gyro ](http://www.seeedstudio.com/depot/images/product/gbgr.jpg)](http://www.seeedstudio.com/depot/grove-3axis-digital-gyro-p-750.html?cPath=25_26)
+![Grove - 3-Axis Digital Gyro ](https://statics3.seeedstudio.com/images/101020050%201.jpg)
+
+[Grove - 3-Axis Digital Gyro](https://www.seeedstudio.com/Grove-3-Axis-Digital-Gyro-p-750.html)
 
 Grove - 3-axis Gyro module based on ITG 3200. It is the world’s first single-chip, digital-output, 3-axis MEMS motion processing gyro optimized for gaming, 3D mice, and motion-based remote control applications for Internet connected Digital TVs and Set Top Boxes.
 
@@ -31,7 +33,9 @@ Features:
 
 
 <br>
-For more information, please refer to [wiki page](http://www.seeedstudio.com/wiki/Grove_-_3-Axis_Digital_Gyro).
+
+
+For more information, please refer to [seeed wiki](http://wiki.seeedstudio.com/Grove-3-Axis_Digital_Gyro/).
 
     
 ----
