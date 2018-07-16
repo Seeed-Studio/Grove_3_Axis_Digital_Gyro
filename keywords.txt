@@ -23,4 +23,4 @@ zeroCalibrate	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
-ITG3200 LITERAL1
+ITG3200	LITERAL1
