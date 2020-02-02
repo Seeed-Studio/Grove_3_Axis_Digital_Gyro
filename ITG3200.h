@@ -1,8 +1,8 @@
 /*****************************************************************************/
-//	Function:    Header file for ITG3200 
+//	Function:    Header file for ITG3200
 //  Hardware:    Grove - 3-Axis Digital Gyro
 //	Arduino IDE: Arduino-1.0
-//	Author:	 Frankie.Chu		
+//	Author:	 Frankie.Chu
 //	Date: 	 Jan 11,2013
 //	Version: v1.0
 //	by www.seeedstudio.com
@@ -43,21 +43,20 @@
 #define ITG3200_GZ_L	0x22
 #define ITG3200_PWR_M	0x3E
 
-class ITG3200
-{
-private:
-	int8_t read(uint8_t _register);
-	int16_t x_offset;
-	int16_t y_offset;
-	int16_t z_offset;
-public:
-	void init();
-	int16_t read(uint8_t addressh, uint8_t addressl);
-	void write(uint8_t _register, uint8_t _data);
-	double getTemperature();
-	void getXYZ(int16_t *x,int16_t *y,int16_t *z);
-	void getAngularVelocity(float *ax,float *ay,float *az);
-	void zeroCalibrate(unsigned int samples, unsigned int sampleDelayMS); 
+class ITG3200 {
+  private:
+    int8_t read(uint8_t _register);
+    int16_t x_offset;
+    int16_t y_offset;
+    int16_t z_offset;
+  public:
+    void init();
+    int16_t read(uint8_t addressh, uint8_t addressl);
+    void write(uint8_t _register, uint8_t _data);
+    double getTemperature();
+    void getXYZ(int16_t* x, int16_t* y, int16_t* z);
+    void getAngularVelocity(float* ax, float* ay, float* az);
+    void zeroCalibrate(unsigned int samples, unsigned int sampleDelayMS);
 };
 
 #endif

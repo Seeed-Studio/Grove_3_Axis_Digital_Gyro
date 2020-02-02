@@ -28,21 +28,19 @@
 #include "ITG3200.h"
 
 ITG3200 gyro;
-void setup()
-{
+void setup() {
     Serial.begin(9600);
     gyro.init();
-    gyro.zeroCalibrate(200,10);//sample 200 times to calibrate and it will take 200*10ms
+    gyro.zeroCalibrate(200, 10); //sample 200 times to calibrate and it will take 200*10ms
 }
 
-void loop()
-{
+void loop() {
     Serial.print("Temperature = ");
     Serial.print(gyro.getTemperature());
     Serial.println(" C");
 
-    int16_t x,y,z;
-    gyro.getXYZ(&x,&y,&z);
+    int16_t x, y, z;
+    gyro.getXYZ(&x, &y, &z);
     Serial.print("values of X , Y , Z: ");
     Serial.print(x);
     Serial.print(" , ");
@@ -50,8 +48,8 @@ void loop()
     Serial.print(" , ");
     Serial.println(z);
 
-    float ax,ay,az;
-    gyro.getAngularVelocity(&ax,&ay,&az);
+    float ax, ay, az;
+    gyro.getAngularVelocity(&ax, &ay, &az);
     Serial.print("Angular Velocity of X , Y , Z: ");
     Serial.print(ax);
     Serial.print(" , ");
