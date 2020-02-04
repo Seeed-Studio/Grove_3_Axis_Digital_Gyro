@@ -1,4 +1,4 @@
-Grove - 3-Axis Digital Gyro 
+Grove - 3-Axis Digital Gyro   [![Build Status](https://travis-ci.com/Seeed-Studio/Grove_3_Axis_Digital_Gyro.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Grove_3_Axis_Digital_Gyro)
 ---------------------------------------------------------
 ![Grove - 3-Axis Digital Gyro ](https://statics3.seeedstudio.com/images/101020050%201.jpg)
 
