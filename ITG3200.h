@@ -54,7 +54,7 @@ class ITG3200 {
     int16_t read(uint8_t addressh, uint8_t addressl);
     void write(uint8_t _register, uint8_t _data);
     double getTemperature();
-    void getXYZ(int16_t* x, int16_t* y, int16_t* z);
+    void getXYZ(int* x, int* y, int* z);
     void getAngularVelocity(float* ax, float* ay, float* az);
     void zeroCalibrate(unsigned int samples, unsigned int sampleDelayMS);
 };
