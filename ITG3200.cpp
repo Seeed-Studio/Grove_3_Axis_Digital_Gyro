@@ -92,14 +92,14 @@ double ITG3200::getTemperature() {
 }
 /*Function: Get the contents of the registers in the ITG3200*/
 /*          so as to calculate the angular velocity.        */
-void ITG3200::getXYZ(int* x, int* y, int* z) {
+void ITG3200::getXYZ(int16_t* x, int16_t* y, int16_t* z) {
     *x = read(ITG3200_GX_H, ITG3200_GX_L) + x_offset;
     *y = read(ITG3200_GY_H, ITG3200_GY_L) + y_offset;
     *z = read(ITG3200_GZ_H, ITG3200_GZ_L) + z_offset;
 }
 /*Function: Get the angular velocity and its unit is degree per second.*/
 void ITG3200::getAngularVelocity(float* ax, float* ay, float* az) {
-    int x, y, z;
+    int16_t x, y, z;
     getXYZ(&x, &y, &z);
     *ax = x / 14.375;
     *ay = y / 14.375;
@@ -109,7 +109,7 @@ void ITG3200::zeroCalibrate(unsigned int samples, unsigned int sampleDelayMS) {
     long x_offset_temp = 0;
     long y_offset_temp = 0;
     long z_offset_temp = 0;
-    long x, y, z;
+    int16_t x, y, z;
     x_offset = 0;
     y_offset = 0;
     z_offset = 0;
